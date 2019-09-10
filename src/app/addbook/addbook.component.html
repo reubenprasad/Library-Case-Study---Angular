@@ -1,0 +1,54 @@
+                          
+    <div class="container">
+        <div class="row">
+          
+          <div class="col-md-12"> 
+            
+            <div class="panel">
+              <div class="panel-body">
+                
+                <h2 style="text-align: center">Add Book</h2>            
+              <hr>
+                
+              <table class="table" style="width: 600px; margin:auto; border: 2px solid black; border-collapse: collapse;">
+                <tr>
+                    <td>Title :</td>
+                    <td><input type="text" class="form-control" name="title" placeholder="Enter Title" [(ngModel)]="book.title" required></td>
+                </tr>
+                <tr>
+                    <td>Author :</td>
+                    <td><input type="text" class="form-control" name="author" placeholder="Enter Author" [(ngModel)]="book.author" required></td>
+                </tr>
+
+                <tr>
+                    <td>Genre :</td>
+                    <td><input type="text" class="form-control" name="genre" placeholder="Enter Genre" [(ngModel)]="book.genre" required></td>
+                </tr>
+
+                <tr>
+                    <td>Image :</td>
+                    <td><input type="file" class="form-control" name="image"  placeholder="Upload Image" [(ngModel)]="image" ng2FileSelect [uploader]="uploader"required></td>
+                </tr>
+                
+                <tr style="text-align: left">                        
+                    <td></td>
+                    <td><button class="btn btn-success" type="submit" (click)="uploader.uploadAll(); addBook()"style="width: 150px">Add</button></td>
+                </tr>
+            </table>
+               <hr>
+                
+                
+                
+          
+              
+                
+              </div>
+            </div>
+                                                                                             
+                                                        
+                                                            
+           </div><!--/col-12-->
+        </div>
+      </div>
+  
+    
