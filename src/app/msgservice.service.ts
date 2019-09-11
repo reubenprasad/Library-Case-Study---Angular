@@ -9,38 +9,38 @@ export class MsgserviceService {
   constructor(private http: HttpClient) { }
 
   lg(un,pw){
-    return this.http.post("http://localhost:3000/user/login", {username:un, password:pw});
+    return this.http.post("https://library--server.herokuapp.com/user/login", {username:un, password:pw});
   }
 
   getBooks(){
-    return this.http.get("http://localhost:3000/book");
+    return this.http.get("https://library--server.herokuapp.com/book");
   }
 
   getAuthors(){
-    return this.http.get("http://localhost:3000/auth");
+    return this.http.get("https://library--server.herokuapp.com/auth");
   }
 
   getSb(bid){
-    return this.http.get("http://localhost:3000/book/sp/"+bid);
+    return this.http.get("https://library--server.herokuapp.com/book/sp/"+bid);
   }
 
   getSa(aid){
-    return this.http.get("http://localhost:3000/auth/sa/"+aid);
+    return this.http.get("https://library--server.herokuapp.com/auth/sa/"+aid);
   }
 
   addNewBook(book){
-    return this.http.post("http://localhost:3000/book/addbook/", book)
+    return this.http.post("https://library--server.herokuapp.com/book/addbook/", book)
   }
 
   deleteBook(id){
-    return this.http.get("http://localhost:3000/book/deletebook/" + id);
+    return this.http.get("https://library--server.herokuapp.com/book/deletebook/" + id);
   }
 
   editBook(data){
-    return this.http.post("http://localhost:3000/book/editbook/", data)
+    return this.http.post("https://library--server.herokuapp.com/book/editbook/", data)
   }
 
   register(user){
-    return this.http.post("http://localhost:3000/user/signup", user)
+    return this.http.post("https://library--server.herokuapp.com/user/signup", user)
   }
 }
