@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { MsgserviceService } from "../msgservice.service";
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 
-const URL = 'http://localhost:3000/book/editbook';
+const URL = 'https://library--server.herokuapp.com/book/editbook';
 @Component({
   selector: 'app-editbook',
   templateUrl: './editbook.component.html',

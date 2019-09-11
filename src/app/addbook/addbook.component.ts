@@ -4,7 +4,7 @@ import { MsgserviceService } from "../msgservice.service";
 import { FileUploader } from 'ng2-file-upload/ng2-file-upload';
 import { BooksComponent } from '../books/books.component';
 
-const URL = 'http://localhost:3000/book/addbook';
+const URL = 'https://library--server.herokuapp.com/book/addbook';
 @Component({
   selector: 'app-addbook',
   templateUrl: './addbook.component.html',
